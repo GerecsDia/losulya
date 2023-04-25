@@ -10,14 +10,14 @@ public class MainController {
         handleEvents();
     }
 
-    private void handleEvents() {
+    public void handleEvents() {
         this.mainFrame.getCalcButton().addActionListener(e ->{
                 this.startCalc();
 
         });
     }
     
-    private void startCalc() {
+    public void startCalc() {
         System.out.println("Működik");
         double perimeter = Double.parseDouble(
             this.mainFrame.getPerimeterPanel().getValue()             //ki kell szedni a lónak a kerületét
